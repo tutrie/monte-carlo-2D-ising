@@ -1,7 +1,8 @@
 % Function that graphs the energy, magnetization, heat capacity, and
-% magnteic susceptibility as temperature changes. 
+% magnteic susceptibility as temperature changes.
 function tempChange(N)
     % Initialization of the lists for each value.
+    N = 10;
     EList = zeros(31,1);
     MList = zeros(31,1);
     CvList = zeros(31,1);
@@ -38,4 +39,3 @@ function tempChange(N)
     plot(T,XList,'b.')
     xlabel('T')
     ylabel('Magnetic Susceptibility')
-    
